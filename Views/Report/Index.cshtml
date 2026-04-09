@@ -1,0 +1,32 @@
+﻿@using ASPNETWebAppMVCStudentApp.Models
+@model CourseViewModel
+@{
+    ViewBag.Title = "Student Report";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Student Report</h2>
+    <form method="post" action="/Report/Generate">
+        <div class="form-group">
+            <label for="SelectedCourseID">Select Course:</label>
+            @Html.DropDownListFor(m => m.SelectedCourseID, Model.Courses, "Select a Course", new { @class = "form-control" })
+        </div>
+
+        <button type="submit" name="action" value="preview" class="btn btn-primary">
+            Print Preview
+        </button>
+
+        <button type="submit" name="action" value="export" class="btn btn-secondary">
+            Export to PDF
+        </button>
+
+    </form>
+</body>
+</html>

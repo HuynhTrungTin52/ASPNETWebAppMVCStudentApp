@@ -289,9 +289,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Top>0.93in</Top>
-        <Left>1.64667in</Left>
+        <DataSetName>CourseStudentDataSet</DataSetName>
+        <Top>0.82167in</Top>
+        <Left>0.77167in</Left>
         <Height>0.5in</Height>
         <Width>4in</Width>
         <Style>
@@ -319,11 +319,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>81bb7303-5bfe-4a61-ab0c-566e24135d94</rd:DataSourceID>
+      <rd:DataSourceID>fe8825de-796d-49a9-a2e2-d43fc028ca6b</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="CourseStudentDataSet">
       <Query>
         <DataSourceName>SchoolDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -357,5 +357,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>7371f71c-8f3e-4e6f-ab3f-8eb1d066882a</rd:ReportID>
+  <rd:ReportID>dba6fa1c-5867-47d9-af3a-6d9fb84a2fca</rd:ReportID>
 </Report>

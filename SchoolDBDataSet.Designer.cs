@@ -28,7 +28,7 @@ namespace ASPNETWebAppMVCStudentApp {
         
         private StudentsDataTable tableStudents;
         
-        private DataTable1DataTable tableDataTable1;
+        private ReportDataDataTable tableReportData;
         
         private global::System.Data.DataRelation relationFK__Enrollmen__Stude__412EB0B6;
         
@@ -68,8 +68,8 @@ namespace ASPNETWebAppMVCStudentApp {
                 if ((ds.Tables["Students"] != null)) {
                     base.Tables.Add(new StudentsDataTable(ds.Tables["Students"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["ReportData"] != null)) {
+                    base.Tables.Add(new ReportDataDataTable(ds.Tables["ReportData"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -113,9 +113,9 @@ namespace ASPNETWebAppMVCStudentApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTable1DataTable DataTable1 {
+        public ReportDataDataTable ReportData {
             get {
-                return this.tableDataTable1;
+                return this.tableReportData;
             }
         }
         
@@ -192,8 +192,8 @@ namespace ASPNETWebAppMVCStudentApp {
                 if ((ds.Tables["Students"] != null)) {
                     base.Tables.Add(new StudentsDataTable(ds.Tables["Students"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["ReportData"] != null)) {
+                    base.Tables.Add(new ReportDataDataTable(ds.Tables["ReportData"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -240,10 +240,10 @@ namespace ASPNETWebAppMVCStudentApp {
                     this.tableStudents.InitVars();
                 }
             }
-            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
+            this.tableReportData = ((ReportDataDataTable)(base.Tables["ReportData"]));
             if ((initTable == true)) {
-                if ((this.tableDataTable1 != null)) {
-                    this.tableDataTable1.InitVars();
+                if ((this.tableReportData != null)) {
+                    this.tableReportData.InitVars();
                 }
             }
             this.relationFK__Enrollmen__Stude__412EB0B6 = this.Relations["FK__Enrollmen__Stude__412EB0B6"];
@@ -262,15 +262,15 @@ namespace ASPNETWebAppMVCStudentApp {
             base.Tables.Add(this.tableEnrollments);
             this.tableStudents = new StudentsDataTable();
             base.Tables.Add(this.tableStudents);
-            this.tableDataTable1 = new DataTable1DataTable();
-            base.Tables.Add(this.tableDataTable1);
+            this.tableReportData = new ReportDataDataTable();
+            base.Tables.Add(this.tableReportData);
             this.relationFK__Enrollmen__Stude__412EB0B6 = new global::System.Data.DataRelation("FK__Enrollmen__Stude__412EB0B6", new global::System.Data.DataColumn[] {
                         this.tableStudents.StudentIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableEnrollments.StudentIDColumn}, false);
             this.Relations.Add(this.relationFK__Enrollmen__Stude__412EB0B6);
             this.relationFK__Enrollmen__Stude__412EB0B61 = new global::System.Data.DataRelation("FK__Enrollmen__Stude__412EB0B61", new global::System.Data.DataColumn[] {
                         this.tableStudents.StudentIDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableDataTable1.StudentIDColumn}, false);
+                        this.tableReportData.StudentIDColumn}, false);
             this.Relations.Add(this.relationFK__Enrollmen__Stude__412EB0B61);
         }
         
@@ -288,7 +288,7 @@ namespace ASPNETWebAppMVCStudentApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private bool ShouldSerializeDataTable1() {
+        private bool ShouldSerializeReportData() {
             return false;
         }
         
@@ -354,7 +354,7 @@ namespace ASPNETWebAppMVCStudentApp {
         public delegate void StudentsRowChangeEventHandler(object sender, StudentsRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        public delegate void ReportDataRowChangeEventHandler(object sender, ReportDataRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -977,7 +977,7 @@ namespace ASPNETWebAppMVCStudentApp {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
+        public partial class ReportDataDataTable : global::System.Data.TypedTableBase<ReportDataRow> {
             
             private global::System.Data.DataColumn columnStudentID;
             
@@ -989,8 +989,8 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1DataTable() {
-                this.TableName = "DataTable1";
+            public ReportDataDataTable() {
+                this.TableName = "ReportData";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -998,7 +998,7 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal DataTable1DataTable(global::System.Data.DataTable table) {
+            internal ReportDataDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1015,7 +1015,7 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ReportDataDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1063,55 +1063,55 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row this[int index] {
+            public ReportDataRow this[int index] {
                 get {
-                    return ((DataTable1Row)(this.Rows[index]));
+                    return ((ReportDataRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
+            public event ReportDataRowChangeEventHandler ReportDataRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
+            public event ReportDataRowChangeEventHandler ReportDataRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
+            public event ReportDataRowChangeEventHandler ReportDataRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
+            public event ReportDataRowChangeEventHandler ReportDataRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void AddDataTable1Row(DataTable1Row row) {
+            public void AddReportDataRow(ReportDataRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string FirstName, string LastName, decimal Grade) {
-                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
+            public ReportDataRow AddReportDataRow(string FirstName, string LastName, decimal Grade) {
+                ReportDataRow rowReportDataRow = ((ReportDataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         FirstName,
                         LastName,
                         Grade};
-                rowDataTable1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTable1Row);
-                return rowDataTable1Row;
+                rowReportDataRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowReportDataRow);
+                return rowReportDataRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row FindByStudentID(int StudentID) {
-                return ((DataTable1Row)(this.Rows.Find(new object[] {
+            public ReportDataRow FindByStudentID(int StudentID) {
+                return ((ReportDataRow)(this.Rows.Find(new object[] {
                             StudentID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
+                ReportDataDataTable cln = ((ReportDataDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1119,7 +1119,7 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTable1DataTable();
+                return new ReportDataDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1158,28 +1158,28 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row NewDataTable1Row() {
-                return ((DataTable1Row)(this.NewRow()));
+            public ReportDataRow NewReportDataRow() {
+                return ((ReportDataRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTable1Row(builder);
+                return new ReportDataRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTable1Row);
+                return typeof(ReportDataRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTable1RowChanged != null)) {
-                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.ReportDataRowChanged != null)) {
+                    this.ReportDataRowChanged(this, new ReportDataRowChangeEvent(((ReportDataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1187,8 +1187,8 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTable1RowChanging != null)) {
-                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.ReportDataRowChanging != null)) {
+                    this.ReportDataRowChanging(this, new ReportDataRowChangeEvent(((ReportDataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1196,8 +1196,8 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTable1RowDeleted != null)) {
-                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.ReportDataRowDeleted != null)) {
+                    this.ReportDataRowDeleted(this, new ReportDataRowChangeEvent(((ReportDataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1205,14 +1205,14 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTable1RowDeleting != null)) {
-                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.ReportDataRowDeleting != null)) {
+                    this.ReportDataRowDeleting(this, new ReportDataRowChangeEvent(((ReportDataRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void RemoveDataTable1Row(DataTable1Row row) {
+            public void RemoveReportDataRow(ReportDataRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1239,7 +1239,7 @@ namespace ASPNETWebAppMVCStudentApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTable1DataTable";
+                attribute2.FixedValue = "ReportDataDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1472,12 +1472,12 @@ namespace ASPNETWebAppMVCStudentApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row[] GetDataTable1Rows() {
+            public ReportDataRow[] GetReportDataRows() {
                 if ((this.Table.ChildRelations["FK__Enrollmen__Stude__412EB0B61"] == null)) {
-                    return new DataTable1Row[0];
+                    return new ReportDataRow[0];
                 }
                 else {
-                    return ((DataTable1Row[])(base.GetChildRows(this.Table.ChildRelations["FK__Enrollmen__Stude__412EB0B61"])));
+                    return ((ReportDataRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Enrollmen__Stude__412EB0B61"])));
                 }
             }
         }
@@ -1485,25 +1485,25 @@ namespace ASPNETWebAppMVCStudentApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTable1Row : global::System.Data.DataRow {
+        public partial class ReportDataRow : global::System.Data.DataRow {
             
-            private DataTable1DataTable tableDataTable1;
+            private ReportDataDataTable tableReportData;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
+            internal ReportDataRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
+                this.tableReportData = ((ReportDataDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public int StudentID {
                 get {
-                    return ((int)(this[this.tableDataTable1.StudentIDColumn]));
+                    return ((int)(this[this.tableReportData.StudentIDColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.StudentIDColumn] = value;
+                    this[this.tableReportData.StudentIDColumn] = value;
                 }
             }
             
@@ -1511,10 +1511,10 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public string FirstName {
                 get {
-                    return ((string)(this[this.tableDataTable1.FirstNameColumn]));
+                    return ((string)(this[this.tableReportData.FirstNameColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.FirstNameColumn] = value;
+                    this[this.tableReportData.FirstNameColumn] = value;
                 }
             }
             
@@ -1522,10 +1522,10 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public string LastName {
                 get {
-                    return ((string)(this[this.tableDataTable1.LastNameColumn]));
+                    return ((string)(this[this.tableReportData.LastNameColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.LastNameColumn] = value;
+                    this[this.tableReportData.LastNameColumn] = value;
                 }
             }
             
@@ -1534,14 +1534,14 @@ namespace ASPNETWebAppMVCStudentApp {
             public decimal Grade {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDataTable1.GradeColumn]));
+                        return ((decimal)(this[this.tableReportData.GradeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Grade\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Grade\' in table \'ReportData\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.GradeColumn] = value;
+                    this[this.tableReportData.GradeColumn] = value;
                 }
             }
             
@@ -1559,13 +1559,13 @@ namespace ASPNETWebAppMVCStudentApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public bool IsGradeNull() {
-                return this.IsNull(this.tableDataTable1.GradeColumn);
+                return this.IsNull(this.tableReportData.GradeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public void SetGradeNull() {
-                this[this.tableDataTable1.GradeColumn] = global::System.Convert.DBNull;
+                this[this.tableReportData.GradeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1641,22 +1641,22 @@ namespace ASPNETWebAppMVCStudentApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public class DataTable1RowChangeEvent : global::System.EventArgs {
+        public class ReportDataRowChangeEvent : global::System.EventArgs {
             
-            private DataTable1Row eventRow;
+            private ReportDataRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
+            public ReportDataRowChangeEvent(ReportDataRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public DataTable1Row Row {
+            public ReportDataRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2319,7 +2319,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DataTable1TableAdapter : global::System.ComponentModel.Component {
+    public partial class ReportDataTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -2333,7 +2333,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public DataTable1TableAdapter() {
+        public ReportDataTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -2430,7 +2430,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DataTable1";
+            tableMapping.DataSetTable = "ReportData";
             tableMapping.ColumnMappings.Add("StudentID", "StudentID");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
@@ -2461,7 +2461,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SchoolDBDataSet.DataTable1DataTable dataTable, global::System.Nullable<int> CourseID) {
+        public virtual int Fill(SchoolDBDataSet.ReportDataDataTable dataTable, global::System.Nullable<int> CourseID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((CourseID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(CourseID.Value));
@@ -2480,7 +2480,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SchoolDBDataSet.DataTable1DataTable GetData(global::System.Nullable<int> CourseID) {
+        public virtual SchoolDBDataSet.ReportDataDataTable GetData(global::System.Nullable<int> CourseID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((CourseID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(CourseID.Value));
@@ -2488,7 +2488,7 @@ namespace ASPNETWebAppMVCStudentApp.SchoolDBDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            SchoolDBDataSet.DataTable1DataTable dataTable = new SchoolDBDataSet.DataTable1DataTable();
+            SchoolDBDataSet.ReportDataDataTable dataTable = new SchoolDBDataSet.ReportDataDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
